@@ -3,12 +3,32 @@ package model;
 import java.util.ArrayList;
 
 public class Produto {
+    private String nome;
+    private float preco;
     private int codigoProduto;
     private ArrayList<Pedido> listaPedido;
-
-    public Produto(int codigoProduto) {
+    
+    public Produto(String nome, float preco, int codigoProduto, ArrayList<Pedido> listaPedido) {
+        this.nome = nome;
+        this.preco = preco;
         this.codigoProduto = codigoProduto;
         this.listaPedido = new ArrayList<Pedido>();
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public float getPreco() {
+        return preco;
+    }
+
+    public void setPreco(float preco) {
+        this.preco = preco;
     }
 
     public int getCodigoProduto() {
