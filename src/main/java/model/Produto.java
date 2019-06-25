@@ -8,7 +8,7 @@ public class Produto {
     private int codigoProduto;
     private ArrayList<Pedido> listaPedido;
     
-    public Produto(String nome, float preco, int codigoProduto, ArrayList<Pedido> listaPedido) {
+    public Produto(String nome, float preco, int codigoProduto) {
         this.nome = nome;
         this.preco = preco;
         this.codigoProduto = codigoProduto;
